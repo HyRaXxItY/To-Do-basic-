@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600;1,800;1,900&display=swap");
+
+:root {
+    --primary-color: #333;
+    --light-color: #f8f8ff;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+    --main-color: #c341ff;
+}
+
+body {
+    background-color: #e9f0ff;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 2px;
+    margin: 30px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-sm {
+    background-color: #a8c3ff;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    /* right: 50%; */
+    justify-content: center;
+    text-align: center;
+    transform: translate(-51%, 20%);
+    border-radius: 20px;
+    border: 2px solid #e9f0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px rgb(105, 105, 105);
+    padding: 1rem;
+    margin: 0.9rem;
+    width: 85vw;
+
+}
+
+.header {
+    font-family: 'Sora', sans-serif;
+    color: #03052a;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+
+.todo-form .form {
+    padding-bottom: 20px;
+    /* display: flex; */
+    border: none;
+
+
+
+
+}
+
+.todo-form form input {
+    border: none;
+    background-color: #e9f0ff;
+    border-radius: 4px;
+    padding: 0px 10px;
+    margin: 0px 15px;
+    width: 30vw;
+
+}
+
+.todo-form form input:focus {
+    size: 0.9;
+    outline: none;
+
+}
+
+.todo-form .form .btn {
+    border-radius: 50%;
+}
+
+.todo-list {
+    width: 100%;
+    height: auto;
+}
+
+.todo-list ul {
+    padding: 15px;
+    margin: 10px;
+    padding-top: 0px;
+}
+
+.todo-list ul li {
+    list-style-type: none;
+    border: 1px solid #03052a;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    display: inline-flex;
+    width: 65%;
+    height: 45px;
+    text-align: center;
+    justify-self: center;
+
+}
+
+.todo-list ul li:first-child {
+    margin-top: 0px;
+}
+
+/*added new */
+.list-items {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0d1042;
+    display: flex;
+    flex-direction: row;
+    color: var(--light-color);
+}
+
+.list-items form {
+    width: 100%;
+    display: flex;
+}
+
+.list-items input {
+    flex-grow: 2;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.list-items button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(51, 212, 100);
+}
+
+.list-items .cancel {
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(223, 43, 43);
+    margin-left: 5px;
+}
+
+.list-items div {
+    flex-grow: 2;
+}
+
+.list-items .edit {
+    color: rgb(143, 233, 58);
+    margin-right: 10px;
+    cursor: pointer;
+
+    text-decoration: no
+}
+
+.list-items .remove {
+    color: rgb(243, 96, 96);
+    margin-right: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list-items .check {
+    margin-right: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    color: #03052a;
+}
+
+
+.list-item-name {
+    align-items: center;
+    justify-content: center;
+}
