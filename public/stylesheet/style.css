@@ -27,7 +27,7 @@ body {
     /* right: 50%; */
     justify-content: center;
     text-align: center;
-    transform: translate(-51%, 20%);
+    transform: translate(-50%, 35%);
     border-radius: 20px;
     border: 2px solid #e9f0ff;
     display: flex;
@@ -116,6 +116,7 @@ body {
     display: flex;
     flex-direction: row;
     color: var(--light-color);
+    overflow: auto;
 }
 
 .list-items form {
@@ -185,4 +186,11 @@ body {
 .list-item-name {
     align-items: center;
     justify-content: center;
+}
+
+
+
+.done {
+    text-decoration: line-through;
+
 }

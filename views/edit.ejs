@@ -13,38 +13,17 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Hello, world!</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="./public/stylesheet/style.css">
     <!-- <link rel="stylesheet" href="reset.css"> -->
 </head>
 
 <body>
-    <!-- <div class="todo-container">
-        <h2>To-Do List</h2>
-        <div class="todo">
-            <form action="/" method="POST" class="todo-header">
-                <input type="text" name="content">
-                <button type="submit"><span class="fas fa-plus"></span></button>
-            </form>
-            <ul class="todo-list">
-                <li class="todo-list-item">
-                    <div class="todo-list-item-name">Some Text</div>
-                    <a href="" class="edit">
-                        <span class="fas fa-edit"></span>
-                    </a>
-                    <a href="" class="remove">
-                        <span class="fas fa-times"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-
     <div class="container-sm text-center justify-content-center ">
         <h2 class="header"> To-Do List </h2>
         <div class="todo-form">
-            <form action="/" class="form d-inline-flex" method="POST">
+            <form action="" class="form d-inline-flex" method="POST">
 
-                <input type="text" name="todo[content]" placeholder=" to-do ....">
+                <input type="text" name="content" placeholder=" to-do ....">
                 <button class="btn btn-primary" type="submit">
                     <i class="fa fa-plus"></i>
                 </button>
@@ -53,25 +32,28 @@
         <div class="todo-list justify-content-center text-center ">
             <ul class="todo-list">
                 <% todo.forEach( details => { %>
-                <li class="list-items">
-                    <div class="list-item-name justify-content-center"><%= details.content%></div>
-                    <a class="edit" href="/edit/<%= details._id%>">
-                        <span class="fa fa-edit"></span>
+                <% if (details._id == id ) { %>
+                <li class="list-item">
+                    <form action="/edit/<%= details._id%>?_method=UPDATE" method="POST">
+                        <input type="text" value="<%= details.content %>" name="content">
+                        <button type="submit">Confirm</button>
+                        <a href="/" class="cancel">Cancel</a>
+                    </form>
+                </li>
+                <% } else { %>
+                <li class="list-item">
+                    <div class="list-item-name"><%= details.content %></div>
+                    <a href="/edit/<%= details._id %>" class="edit"> <span class="fas fa-edit"></span>
                     </a>
-                    <a class="remove" href="/remove/<%= details._id%> ">
-                        <span class="fa fa-times"></span>
-                    </a>
-                    <a class="check" onclick="addDone()">
-                        <span class="fa fa-check"></span>
+                    <a href="/remove/<%= details._id %>" class="remove"> <span class="fas fa-times"></span>
                     </a>
                 </li>
+                <% } %>
                 <% }) %>
+            </ul>
             </ul>
         </div>
     </div>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
