@@ -28,10 +28,19 @@ app.use(methodOverride("_method"));
 //     element.classList.toggle("done");
 // }
 
+const t1 = new TodoTask({ content: "add to-do  👆🏻" })
+const t2 = new TodoTask({ content: " update them 👉🏻" })
+const t3 = new TodoTask({ content: " remove them, once done 🤖" })
+
+const addDef = [t1, t2, t3];
 
 
 app.get("/", async (req, res) => {
     const todo = await TodoTask.find({});
+    if (todo.length === 0) {
+        const todo = await TodoTask.insertMany(addDef);
+        res.render('index', { todo })
+    }
     res.render('index', { todo })
 })
 

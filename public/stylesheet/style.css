@@ -10,13 +10,15 @@
 }
 
 body {
-    background-color: #e9f0ff;
+    /* background-color: #e9f0ff; */
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     padding: 30px 2px;
     margin: 30px 20px;
     font-family: "Poppins", sans-serif;
+    background-image: url('/../prompt/7134013.jpg');
+    /* filter: blur(3px); */
 }
 
 .container-sm {
@@ -27,7 +29,7 @@ body {
     /* right: 50%; */
     justify-content: center;
     text-align: center;
-    transform: translate(-50%, 35%);
+    transform: translate(-51%, 50%);
     border-radius: 20px;
     border: 2px solid #e9f0ff;
     display: flex;
@@ -37,6 +39,7 @@ body {
     padding: 1rem;
     margin: 0.9rem;
     width: 85vw;
+
 
 }
 
@@ -116,7 +119,6 @@ body {
     display: flex;
     flex-direction: row;
     color: var(--light-color);
-    overflow: auto;
 }
 
 .list-items form {
@@ -188,9 +190,8 @@ body {
     justify-content: center;
 }
 
-
-
-.done {
-    text-decoration: line-through;
-
+.list-item-name h6 {
+    text-align: center;
+    transform: translateY(0.4rem);
+    font-size: 1.3vmax;
 }

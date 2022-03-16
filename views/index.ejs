@@ -54,15 +54,18 @@
             <ul class="todo-list">
                 <% todo.forEach( details => { %>
                 <li class="list-items">
-                    <div class="list-item-name justify-content-center"><%= details.content%></div>
+                    <div class="list-item-name justify-content-center">
+                        <h6><%= details.content%></h6>
+                    </div>
+                    <!-- <button class="check text-center justify-content-center" onClick="addDone()"> done
+                       <span class="fa fa-check"></span>
+
+                    </button> -->
                     <a class="edit" href="/edit/<%= details._id%>">
                         <span class="fa fa-edit"></span>
                     </a>
                     <a class="remove" href="/remove/<%= details._id%> ">
                         <span class="fa fa-times"></span>
-                    </a>
-                    <a class="check" onclick="addDone()">
-                        <span class="fa fa-check"></span>
                     </a>
                 </li>
                 <% }) %>
@@ -71,11 +74,18 @@
     </div>
 
 
+    <script>
+        const addDone = () => {
+            const element = document.querySelector(".list-item.name");
+            element.classList.toggle("done");
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="../index.js"></script>
+
 </body>
 
 </html>
