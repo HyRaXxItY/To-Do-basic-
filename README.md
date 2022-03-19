@@ -41,7 +41,7 @@ here are some screenshots of the website:
 <img src="https://user-images.githubusercontent.com/76240365/159126428-c7e26cc5-4b88-4807-87a6-a370c1a8c79b.png" width="850">
 
 <br><br>
-![Screenshot 2022-03-19 202755](https://user-images.githubusercontent.com/76240365/159126432-c1605f6a-ccd1-4284-8f77-20672a3cd2a8.png)
+<img src="https://user-images.githubusercontent.com/76240365/159126432-c1605f6a-ccd1-4284-8f77-20672a3cd2a8.png" width="850">
 <br><br>
 
 <h4>one can edit the task by clicking on that edit icon, that takes you to the new page ("edit.ejs") <br> its asks for the confirmation of the user </h4>
