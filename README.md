@@ -34,7 +34,7 @@ here are some screenshots of the website:
 
 
 here is the home page of the website, if theres no todo task available, it shows 3 predefined lines
-<img src = "![Screenshot 2022-03-19 202520](https://user-images.githubusercontent.com/76240365/159126426-14218c4a-ca55-4082-a6c3-5dc1f73d70be.png)" width="350" >
+<img src = "https://user-images.githubusercontent.com/76240365/159126426-14218c4a-ca55-4082-a6c3-5dc1f73d70be.png" width="350" >
 
 you can add todo direclt from the top input field that act as a form that submits its query directly to mongodb using mongoose 
 ![Screenshot 2022-03-19 202630](https://user-images.githubusercontent.com/76240365/159126428-c7e26cc5-4b88-4807-87a6-a370c1a8c79b.png)
