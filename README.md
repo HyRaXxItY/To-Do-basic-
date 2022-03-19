@@ -45,7 +45,7 @@ here are some screenshots of the website:
 <br><br>
 
 <h4>one can edit the task by clicking on that edit icon, that takes you to the new page ("edit.ejs") <br> its asks for the confirmation of the user </h4>
-<img scr="https://user-images.githubusercontent.com/76240365/159126433-6816ad4c-e536-4f01-b14e-fb4b5a7f3464.png" width="850">
+<img src="https://user-images.githubusercontent.com/76240365/159126433-6816ad4c-e536-4f01-b14e-fb4b5a7f3464.png" width="850">
 
 <h4> one can also remove the task that he/she has already completed </h4>
 <img src="https://user-images.githubusercontent.com/76240365/159126435-5cc7399d-c7b0-4f1d-a460-55faa320c904.png" width ="850">
