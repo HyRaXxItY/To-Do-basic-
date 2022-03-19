@@ -48,4 +48,6 @@ here are some screenshots of the website:
 <img src="https://user-images.githubusercontent.com/76240365/159126433-6816ad4c-e536-4f01-b14e-fb4b5a7f3464.png" width="850">
 
 <h4> one can also remove the task that he/she has already completed </h4>
-<img src="https://user-images.githubusercontent.com/76240365/159126435-5cc7399d-c7b0-4f1d-a460-55faa320c904.png" width ="850">
+
+
+<img src="https://user-images.githubusercontent.com/76240365/159127441-807a5f4d-87f9-4841-8eca-5e1aac1d6ee9.png" width ="850">
