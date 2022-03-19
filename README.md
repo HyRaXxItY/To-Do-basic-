@@ -16,7 +16,7 @@
   
  <p> i have made this site using node js environment , <br> used express as my main backend framework for request handling and file serving <br>
     mongo Db is used for the databse with the help of mongoose ODM 
-    front end part is executed using html , css , ejs
+    <br>front end part is executed using html , css , ejs
     </p>
     
   <p> it basially contains 2 page, index.ejs and  edit.ejs ,
