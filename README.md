@@ -1,15 +1,31 @@
 # To-Do basic
 
-this repo contains my initial project of web devlopment
-**BASIC TODO APP**
+<h4>this repo contains my initial project of web devlopment</h4>
+<h2>BASIC TODO APP</h2>
 
-tools used: 
-  node.js
-  mongo db
-  mongoose (for mongodb intergration)
-  html + css
+  <h4>
+  tools used: 
+    <ul>
+      <li>node.js (express)</li>
+      <li>mongo DB</li>
+      <li>mongoose (for mongo db integration)</li>
+      <li> HTML + CSS + JS(ejs) for frontend </li>
+    </ul>
+  </h4>
   
-  
+ <p> i have made this site using node js environment , <br> used express as my main backend framework for request handling and file serving <br>
+    mongo Db is used for the databse with the help of mongoose ODM 
+    front end part is executed using html , css , ejs
+    </p>
+    
+  <p> it basially contains 2 page, index.ejs and  edit.ejs ,
+      index display all the task and edit is for editing a particular task </p>
+      
+      
+  <p> there was an error which i have encountered during the course of making this website
+    <li> couldn't serve style css for edit.ejs , so i had to use inline style tags for styling </li>
+  <h6> anyone having any idea on how to improve the project and to debug the above mentioned error ,<br> <small>please shoot me an email</small> </h6>
+    </p>      
   
 here are some screenshots of the website:
 
