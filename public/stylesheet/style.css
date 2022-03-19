@@ -17,11 +17,17 @@ body {
     padding: 30px 2px;
     margin: 30px 20px;
     font-family: "Poppins", sans-serif;
-    background-image: url('/../prompt/7134013.jpg');
-    /* filter: blur(3px); */
+    /* background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(3px); */
 }
 
+
+
 .container-sm {
+    z-index: 100;
     background-color: #a8c3ff;
     position: absolute;
     left: 50%;
@@ -29,7 +35,7 @@ body {
     /* right: 50%; */
     justify-content: center;
     text-align: center;
-    transform: translate(-51%, 50%);
+    transform: translate(-50%, 50%);
     border-radius: 20px;
     border: 2px solid #e9f0ff;
     display: flex;
