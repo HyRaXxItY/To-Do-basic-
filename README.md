@@ -26,7 +26,8 @@
   <p> there was an error which i have encountered during the course of making this website
     <li> couldn't serve style css for edit.ejs , so i had to use inline style tags for styling </li>
   <br><br>
-  <h6> anyone having any idea on how to improve the project and to debug the above mentioned error ,,,<br> are always appreciated <small>please shoot me an email</small> </h6>
+  <h6> anyone having any idea on how to improve the project and to debug the above mentioned error , are always appreciated 
+    <br> <small>please shoot me an email</small> </h6>
     </p>      
   <br><br><br><br>
   
@@ -43,5 +44,8 @@ here are some screenshots of the website:
 ![Screenshot 2022-03-19 202755](https://user-images.githubusercontent.com/76240365/159126432-c1605f6a-ccd1-4284-8f77-20672a3cd2a8.png)
 <br><br>
 
-![Screenshot 2022-03-19 202826](https://user-images.githubusercontent.com/76240365/159126433-6816ad4c-e536-4f01-b14e-fb4b5a7f3464.png)
-![Screenshot 2022-03-19 202840](https://user-images.githubusercontent.com/76240365/159126435-5cc7399d-c7b0-4f1d-a460-55faa320c904.png)
+<h4>one can edit the task by clicking on that edit icon, that takes you to the new page ("edit.ejs") <br> its asks for the confirmation of the user </h4>
+<img scr="https://user-images.githubusercontent.com/76240365/159126433-6816ad4c-e536-4f01-b14e-fb4b5a7f3464.png" width="850">
+
+<h4> one can also remove the task that he/she has already completed </h4>
+<img src="https://user-images.githubusercontent.com/76240365/159126435-5cc7399d-c7b0-4f1d-a460-55faa320c904.png" width ="850">
